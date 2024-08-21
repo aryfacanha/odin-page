@@ -68,11 +68,11 @@ body > * {
     gap: 12px
 }
 
-.text-container {
+.content-container .text-container {
   flex: 1;
 }
 
-.title {
+.content-container .text-container > .title {
     font-size: 48px;
     font-weight: 900;
 }
@@ -163,4 +163,50 @@ body > * {
     text-align: right;
     font-size: 24px;
     font-weight: 900;
+}
+
+/* Sign Up */
+
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+.signup {
+    background-color: #3882F6;
+    min-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 46px 0;
+    border-radius: 12px;
+}
+
+.signup .text-container {
+    color: #FFF;
+}
+
+.signup .text-container .title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.btn-signup.inverted {
+    border: 2px solid #FFF;
+    border-radius: 5px;
+    margin-top: 12px;
+    font-weight: 700;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+    background-color: #1F2937;
+    color: #FFF;
 }
