@@ -55,6 +55,7 @@ body > * {
 /* Content */
 
 .content-container {
+    padding: 80px 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,12 +65,21 @@ body > * {
 .content {
     flex: 1;
     display: flex;
+    flex-wrap: wrap;
     min-height: 200px;
+    justify-content: center;
     gap: 12px
 }
 
 .content-container .text-container {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content .btn-signup {
+    width: fit-content;
 }
 
 .content-container .text-container > .title {
@@ -87,6 +97,11 @@ body > * {
     align-items: center;
 }
 
+.image-container img {
+    height: 100%;
+    width: 100%;
+}
+
 .btn-signup {
     padding: 8px 24px;
     background-color: #3882F6;
@@ -94,6 +109,7 @@ body > * {
     border: none;
     margin-top: 12px;
     font-weight: 700;
+    cursor: pointer;
 }
 
 /* Info */
